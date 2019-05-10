@@ -1,0 +1,48 @@
+body {
+  background-image: url(img4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 130%;
+ 
+}
+#lifebars {
+  height: 50px;
+  display: flex;
+  background-color: rgba(0, 0, 0, .5);
+  margin-bottom: 120px;
+  justify-content: center;
+  align-content: center;
+}
+#charSelect {
+  height: 70px;
+  background-color: rgba(60, 70, 50, 0.2);
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-content: center;
+}
+#characterOptions {
+  height: 400px;
+  display: flex;
+  margin-bottom: 70px;
+  justify-content: center;
+  align-content: center;
+}
+#player1Or2 {
+ 
+}
+#player1Attack {
+  
+   display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+#itemSelect {
+  min-width: 100px;
+  min-height: 400px;
+  background-color: rgba(56, 78, 198, .3);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
