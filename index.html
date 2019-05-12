@@ -13,61 +13,76 @@
 <header class="container-fluid">
   <section class="row" id="lifebars">
     <div class="col-5" id="player1Life">
-      <div id="progressBar" class="progress bg-danger" roll="progressbar" style="width:100%" aria-valuenow="100"
+      <div id="progressBar1" class="progress bg-danger" roll="progressbar" style="width:100%" aria-valuenow="1500"
         aria-valuemin="0" aria-valuemax="1500"></div>
     </div>
     <div class="col-2" id="winnerLoser"></div>
     <div class="col-5" id="player2Life">
-      <div id="progressBar" class="progress bg-warning" roll="progressbar" style="width:100%" aria-valuenow="100"
+      <div id="progressBar2" class="progress bg-warning" roll="progressbar" style="width:100%" aria-valuenow="100"
         aria-valuemin="0" aria-valuemax="1500"></div>
     </div>
   </section>
   <section class="row" id="charSelect">
-    <div class="col-5" id="player1Select">
-      <button id="characters1" class="btn btn-info" onclick="character1()"></button>
-    </div>
-    <div class="col-2">
-      <!-- <img src="assets/toad.png" height="300px" width="150px" alt="Toad" /> -->
-    </div>
-    <div class="col-5" id="player2Select">
-      <button id="characters2" class="btn btn-info" onclick="character2()"></button>
-    </div>
+    <div class="col" id="player1Select">
+      <h1>Character</h1>
+      <div id="characters1-buttons"></div>
+      <div class="col">
+        <!-- <img src="assets/toad.png" height="300px" width="150px" alt="Toad" /> -->
+      </div>
+      <div class="col" id="player2Select">
+        <h1>Character</h1>
+        <div id="characters2-buttons"></div>
+      </div>
   </section>
 </header>
 <main class="container-fluid">
   <div class="row" id="characterOption">
-    <div class="col-5 offset-1" id="player1">
-      <img src="assets/char3.png" height="500px" width="400px" id="Character1" />
+    <div class="col offset-1" id="player1">
+      <img src="assets/mario1.png" height="400px" width="300px" id="Character1" />
     </div>
-    <div class="col-1" id="console">
-      <div id="itemSelect" class="card">
-        <img src="assets/shell.png" height="100px" width="100px" style="margin:0px;" alt="shell" />
+    <div class="col" id="console">
+      <div id="itemSelect" class="row">
+        <img src="assets/shell2.png" height="60px" width="60px" style="margin:0px;" alt="shell" />
         <button id="Item1" class="btn btn-info">Shell!</button>
-        <img src="assets/banana.jpg" height="100px" width="100px" alt="banana" />
-        <button id="Item2" class="btn btn-info">Banana Peel!</button>
-        <img src="assets/mushroom.jpg" height="100px" width="100px" alt="mushroom" />
+        <img src="assets/banana.jpg" height="60px" width="60px" alt="banana" />
+        <button id="Item2" class="btn btn-info">Banana!</button>
+        <img src="assets/mushroom2.png" height="60px" width="60px" alt="mushroom" />
         <button id="Item3" class="btn btn-info">Mushroom!</button>
 
-        <button id="reset" style="margin-top:50px;" class="btn btn-info">Reset!</button>
+        <button id="reset" class="btn btn-info">Reset!</button>
       </div>
     </div>
-    <div class="col-5" id="player2">
-      <img src="assets/char10.png" height="500px" width="400px" id="Character2" />
+    <div class="col" id="player2">
+      <img src="assets/wario1.png" height="400px" width="300px" id="Character2" />
     </div>
   </div>
 </main>
 <footer class="container-fluid" id="attacks">
   <div class="row" id="player1Or2">
-    <div class="col-4 offset-2" id="player1Attacks">
-      <button id='slashed' class="btn btn-danger" onclick="attack1()">Slash!</button>
-      <button id='rushed' class="btn btn-warning" onclick="attack2()">Rush!</button>
-      <button id="criticaled" class="btn btn-success" onclick="attack3()">Crit!</button>
+    <div class="col-6" id="player1Attacks">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <button id='slashed' class="btn btn-danger" onclick="slashAttack()">Slash!</button>
+          <button id='rushed' class="btn btn-warning" onclick="attack2()">Rush!</button>
+          <button id="criticaled" class="btn btn-success" onclick="attack3()">Crit!</button>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
     </div>
 
-    <div class="col-4" id="player2Attacks">
-      <button id="slashed1" class="btn btn-danger" onclick="attack1()">Slash!</button>
-      <button id="rushed1" class="btn btn-warning" onclick="attack2()">Rush!</button>
-      <button id='criticaled1' class="btn btn-success" onclick="attack3()">Crit!</button>
+    <div class="col-6" id="player2Attacks">
+      <div class="row">
+        <div class="col-5"></div>
+        <div class="col-6">
+          <button id="slashed1" class="btn btn-danger" onclick="attack1()">Slash!</button>
+          <button id="rushed1" class="btn btn-warning" onclick="attack2()">Rush!</button>
+          <button id='criticaled1' class="btn btn-success" onclick="attack3()">Crit!</button>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
     </div>
   </div>
 </footer>
