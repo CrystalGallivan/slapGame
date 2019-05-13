@@ -8,7 +8,7 @@
   <title>Mario Slap</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/game.css">
 </head>
 <header class="container-fluid">
   <section class="row" id="lifebars">
@@ -25,6 +25,16 @@
   <section class="row" id="charSelect">
     <div class="col" id="player1Select">
       <h1>Character</h1>
+      <span>
+        <h3>Health:</h3><span id="health">
+          <p>--</p>
+        </span>
+      </span>
+      <span>
+        <h3>Hits:</h3><span id="hits">
+          <p>--</p>
+        </span>
+      </span>
       <div id="characters1-buttons"></div>
       <div class="col">
         <!-- <img src="assets/toad.png" height="300px" width="150px" alt="Toad" /> -->
@@ -65,7 +75,7 @@
         <div class="col-6">
           <button id='slashed' class="btn btn-danger" onclick="slashAttack()">Slash!</button>
           <button id='rushed' class="btn btn-warning" onclick="rushAttack()">Rush!</button>
-          <button id="criticaled" class="btn btn-success" onclick="attack3()">Crit!</button>
+          <button id="criticaled" class="btn btn-success" onclick="critAttack()">Crit!</button>
         </div>
         <div class="col-3"></div>
       </div>
@@ -98,7 +108,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  <script src="game.js"></script>
 </body>
 
 </html>

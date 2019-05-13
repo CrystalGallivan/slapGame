@@ -76,3 +76,11 @@ padding: 1em;
   outline-style: solid;
   
 }
+#playerSelect1 {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  height: 50px;
+  background-color: #2665e5;
+  color: white;
+}
