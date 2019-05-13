@@ -6,7 +6,7 @@ let character = {
   health: 100,
   hits: 0,
   moveIndex: 0,
-  images: ['/assets/mario1.png', '/assets/mario2.png', '/assets/mario3.png'],
+  images: ['assets/mario1.png', 'assets/mario2.png', 'assets/mario3.png'],
   items: []
 }
 // let characters1 = [{
