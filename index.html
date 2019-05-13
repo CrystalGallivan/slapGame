@@ -11,6 +11,19 @@
   <link rel="stylesheet" href="assets/game.css">
 </head>
 <header class="container-fluid">
+  <section class="row" id="charInfo">
+    <h1>Character</h1>
+    <span>
+      <p>Health:</p><span id="health">
+        <p>--</p>
+      </span>
+    </span>
+    <span>
+      <p>Hits:</p><span id="hits">
+        <p>--</p>
+      </span>
+    </span>
+  </section>
   <section class="row" id="lifebars">
     <div class="col-5" id="player1Life">
       <div id="progressBar1" class="progress bg-danger" roll="progressbar" style="width:100%" aria-valuenow="1500"
@@ -24,23 +37,13 @@
   </section>
   <section class="row" id="charSelect">
     <div class="col" id="player1Select">
-      <h1>Character</h1>
-      <span>
-        <h3>Health:</h3><span id="health">
-          <p>--</p>
-        </span>
-      </span>
-      <span>
-        <h3>Hits:</h3><span id="hits">
-          <p>--</p>
-        </span>
-      </span>
+
       <div id="characters1-buttons"></div>
       <div class="col">
         <!-- <img src="assets/toad.png" height="300px" width="150px" alt="Toad" /> -->
       </div>
       <div class="col" id="player2Select">
-        <h1>Character</h1>
+
         <div id="characters2-buttons"></div>
       </div>
   </section>
@@ -86,9 +89,9 @@
       <div class="row">
         <div class="col-5"></div>
         <div class="col-6">
-          <button id="slashed1" class="btn btn-danger" onclick="attack1()">Slash!</button>
-          <button id="rushed1" class="btn btn-warning" onclick="attack2()">Rush!</button>
-          <button id='criticaled1' class="btn btn-success" onclick="attack3()">Crit!</button>
+          <button id="slashed1" class="btn btn-danger" onclick="slashAttack2()">Slash!</button>
+          <button id="rushed1" class="btn btn-warning" onclick="rushAttack2()">Rush!</button>
+          <button id='criticaled1' class="btn btn-success" onclick="critAttack2()">Crit!</button>
         </div>
         <div class="col-1"></div>
       </div>

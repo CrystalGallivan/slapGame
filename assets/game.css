@@ -6,14 +6,14 @@ body {
  
 }
 #lifebars {
-  height: 50px;
+  height: 30px;
   display: flex;
   background-color: rgba(0, 0, 0, .5);
   justify-content: center;
   align-content: center;
 }
 #charSelect {
-  height: 70px;
+  height: 30px;
   background-color: rgba(60, 70, 50, 0.2);
   display: flex;
   margin-bottom: 30px;
@@ -76,11 +76,11 @@ padding: 1em;
   outline-style: solid;
   
 }
-#playerSelect1 {
+#charSelect{
   display:flex;
   justify-content: center;
   align-content: center;
-  height: 50px;
-  background-color: #2665e5;
+  height: 10px;
+  background-color: #2666e57a;
   color: white;
 }
